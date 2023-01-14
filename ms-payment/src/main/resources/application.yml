@@ -1,0 +1,7 @@
+spring:
+  config:
+    import: optional:configserver:http://localhost:8888
+  application:
+    name: ms-payment
+
+#  остальной код тут https://github.com/Evengarr/myShop/edit/master/ms-payment.yml

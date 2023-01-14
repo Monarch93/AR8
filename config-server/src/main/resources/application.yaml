@@ -1,0 +1,23 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Evengarr/myShop
+          default-label: master
+          username: Evengarr
+          password: Ytrewq@951
+          clone-on-start: true
+        native:
+          search-locations: classpath:/config
+
+eureka:
+  client:
+    service-url:
+      default-zone: ${EUREKA_URI:http://localhost:8761/eureka}
